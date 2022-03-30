@@ -15,7 +15,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Search></Search>}></Route>
-        <Route path='/search-details:id' element={<SearchDetails></SearchDetails>}></Route>
+        <Route path='/search-details/:mealId' element={<SearchDetails></SearchDetails>}></Route>
         <Route path='/meal-db' element={<MealDB></MealDB>}>
           <Route path=':details' element={<MealDbDetails></MealDbDetails>}></Route>
         </Route>

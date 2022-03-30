@@ -15,7 +15,7 @@ const Meals = ({ meal }) => {
             <h2 className='text-left text-3xl m-3'>{strMeal}</h2>
             <h2 className='text-left text-2xl m-3'>{strCategory}</h2>
             <div className='flex justify-between'>
-                <Link to={`search-details/${idMeal}`} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Details</Link>
+                <Link to={'/search-details/' + idMeal} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Details</Link>
                 <button onClick={productHandler} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full'> Details</button>
             </div>
         </div>
