@@ -27,7 +27,7 @@ const Search = () => {
             <input onChange={searchHandle} className="w-1/2 text-center h-12 px-4 mb-2 text-lg text-gray-700 placeholder-gray-600 border rounded-lg focus:shadow-outline" type="text" placeholder="Search Your Food" />
             <h2 className='text-3xl font-bold m-8'>Meals Length: {meals.length}</h2>
 
-            <div className="grid grid-cols-4 gap-4 justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
                 {
                     meals.map(meal => <Meals key={meal.idMeal} meal={meal}></Meals>)
                 }
