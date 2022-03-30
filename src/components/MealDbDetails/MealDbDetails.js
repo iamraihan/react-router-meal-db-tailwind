@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 const MealDbDetails = () => {
     const { details } = useParams()
     const [meal, setMeal] = useState({})
-    console.log(meal);
     useEffect(() => {
         const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${details}`
         fetch(url)

@@ -16,7 +16,7 @@ const MealDB = () => {
                 <Outlet></Outlet>
             </div>
 
-            <div className='grid grid-cols-4 gap-4 justify-items-center'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-items-center'>
                 {
                     meals.map(meal => (
                         // <h2 className='text-3xl font-bold'>{meal.strMeal}</h2>
